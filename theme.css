@@ -1,5 +1,6 @@
-:root {
-    --black: #262427;
+body {
+	/* 0x96f color definitions */
+	--black: #262427;
     --red: #ff7272;
     --green: #bcdf59;
     --yellow: #ffca58;
@@ -15,9 +16,30 @@
     --light-magenta: #aea3e6;
     --light-cyan: #baebf6;
     --light-white: #fcfcfa;
+	
+	/* Obsidian mapping */
+	--color-black: var(--black);
+	--color-red: var(--red);
+	--color-green: var(--green);
+	--color-yellow: var(--yellow);
+	--color-blue: var(--blue);
+	--color-purple: var(--magenta);
+	--color-cyan: var(--cyan);
+	--color-white: var(--white);
+	
+	/* Disable ugly rounded corners */
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
 }
 
-.theme-dark body {
+.theme-dark {
 	--code-background: var(--black);
 	--code-comment: var(--light-black);
 	--code-function: var(--green);
@@ -32,7 +54,7 @@
 	--code-normal: var(--white);
 }
 
-.theme-light body {
+.theme-light {
 	--code-background: var(--white);
 	--code-comment: color-mix(in hsl, var(--light-black), var(--light-white) 50%);
 	--code-function: color-mix(in hsl, var(--green), #000 20%);
@@ -45,27 +67,6 @@
 	--code-tag: var(--magenta);
 	--code-value: color-mix(in hsl, var(--magenta), #000 20%);
 	--code-normal: var(--black);
-}
-
-body {
-	--color-black: var(--black);
-	--color-red: var(--red);
-	--color-green: var(--green);
-	--color-yellow: var(--yellow);
-	--color-blue: var(--blue);
-	--color-purple: var(--magenta);
-	--color-cyan: var(--cyan);
-	--color-white: var(--white);
-
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
 }
 
 pre.language-diff .deleted-sign {

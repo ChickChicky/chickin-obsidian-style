@@ -1,8 +1,7 @@
 {
 	"name": "Chickin Style",
-	"description": "Personal square theme based on [0x96f](https://0x96f.dev/theme) theme.",
-	"version": "1.0.2",
-	"minAppVersion": "1.10.0",
+	"version": "1.0.3",
+	"minAppVersion": "1.10.6",
 	"author": "chickin",
 	"authorUrl": "https://github.com/ChickChicky"
 }
